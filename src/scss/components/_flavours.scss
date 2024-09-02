@@ -1,0 +1,12 @@
+.flavours__container {
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+    height: 70%;
+
+    .flavours__img {
+        height: auto;
+        width: 100%;
+        max-width: 700px;
+    }
+}

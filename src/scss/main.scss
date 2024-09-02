@@ -1,0 +1,35 @@
+@import "settings/reset";
+@import "settings/variables";
+@import "settings/colors";
+@import "settings/fonts";
+@import "settings/utility";
+@import "components/navigation";
+@import "components/hero";
+@import "components/info";
+@import "components/flavours";
+@import "components/about";
+@import "components/order";
+@import "components/footer";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: $font-base;
+  font-weight: 400;
+  font-size: $base-font-size;
+  color: $primary-color;
+  width: 100%;
+  background-color: $base-color;
+}
+
+.container {
+  width: 100%;
+  max-width: 2400px;
+  margin: 0 auto;
+  padding: pxToRem(15) pxToRem(30);
+}

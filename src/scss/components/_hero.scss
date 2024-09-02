@@ -1,0 +1,23 @@
+.container__hero {
+    background-image: url(../../assets/bcookies7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: pxToRem(700);
+    background-position: top 0px center;
+
+    div {
+      background-color: $base-color;
+      border-radius: pxToRem(30);
+      padding: pxToRem(25) pxToRem(30);
+
+      p {
+        font-size: pxToRem(30);
+        text-align: center;
+        font-weight: bold;
+
+      }
+    }
+  }
