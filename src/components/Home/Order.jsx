@@ -1,4 +1,4 @@
-import Order_Photo from "../../assets/order_img.png";
+import Order_Photo from "../../assets/order_img.webp";
 const Order = () => {
   return (
     <div className="container order__container" id="order">

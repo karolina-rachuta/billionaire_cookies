@@ -1,7 +1,7 @@
 import {Link as ScrollLink} from "react-scroll";
 import {Link} from "react-router-dom";
 import {useState} from "react";
-import Logo from '../../assets/logo.png';
+import Logo from '../../assets/logo.webp';
 import Navigation from "./Header/Navigations";
 
 const Header = () => {

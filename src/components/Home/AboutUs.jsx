@@ -1,4 +1,4 @@
-import About_info from "../../assets/about_info.png";
+import About_info from "../../assets/about_info.webp";
 const AboutUs = () => {
   return (
     <div className="container container__about" id="about">
