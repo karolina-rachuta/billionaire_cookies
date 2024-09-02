@@ -17,7 +17,6 @@ function Footer() {
               Dubai
             </a>
           </p>
-          {/* <p><a href="https://wa.me/971567715360"><i class="fa-brands fa-whatsapp"></i> +971 56 771 5360</a></p> */}
         </div>
       </div>
       <div className="footer__socials">
