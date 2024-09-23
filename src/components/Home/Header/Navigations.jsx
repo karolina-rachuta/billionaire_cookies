@@ -9,8 +9,6 @@ const Navigation = ({menuOpen}) => {
             <li><ScrollLink to="about" className="menu__link">About</ScrollLink></li>
             <li><ScrollLink to="flavours" className="menu__link">Flavours</ScrollLink></li>
             <li><ScrollLink to="order" className="menu__link">Order</ScrollLink></li>
-            {/* <li><ScrollLink to="events" className="menu__link">Events & Catering</ScrollLink></li>
-            <li><ScrollLink to="faq" className="menu__link">FAQ</ScrollLink></li> */}
             <li><ScrollLink to="footer" className="menu__link">Contact Us</ScrollLink></li>
             <li className="menu__icons">
                 <a href="https://www.instagram.com/billionairecookiesdubai/" target="_blank"><i className="fa-brands fa-instagram"></i></a>
