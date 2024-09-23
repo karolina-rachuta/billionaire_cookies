@@ -1,3 +1,4 @@
+import React from "react";
 import { useState, useEffect } from "react";
 import useContentful from "../useContenful";
 import Header from "./Home/Header";

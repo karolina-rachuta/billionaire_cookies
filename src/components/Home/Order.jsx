@@ -1,3 +1,4 @@
+import React from "react";
 import Order_Photo from "../../assets/order_img.webp";
 const Order = () => {
   return (

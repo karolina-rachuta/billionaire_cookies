@@ -1,3 +1,4 @@
+import React from "react";
 import About_info from "../../assets/about_info.webp";
 const AboutUs = () => {
   return (
@@ -6,7 +7,7 @@ const AboutUs = () => {
       <div className="about__box">
       <h1>About</h1>
       <p>
-        We're Billionare Cookies, Dubai's first rotating cookie concept with
+        We&apos;re Billionare Cookies, Dubai&apos;s first rotating cookie concept with
         brand new flavours dropping every single week available for a limited
         time only. All recipies are developed by hand in our custom cookie
         kitchen in Dubai.
