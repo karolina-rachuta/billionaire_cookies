@@ -17,44 +17,44 @@ const useContentful = () => {
         space: process.env.REACT_APP_space_id,
         accessToken: process.env.REACT_APP_contentPreviewApi,
     });
-
+    
     useEffect(() => {
         const fetchImage = async () => {
-            if (localCache.url) {
-                setImage(localCache.url);
-                console.log('z cache', localCache.url);
-            } else {
-                const fetchedImage = await getImages();
-                setImage(fetchedImage);
-                console.log('z fetcha', fetchedImage);
+            try {
+                if (localCache.url) {
+                    console.log('z cache')
+                    setImage(localCache.url)
+                } else {
+                    const fetchedImage = await getImages();
+                    console.log('Fetched image:', fetchedImage, image);
+                }
+            } catch (err) {
+                console.error('Error fetching image:', err)
             }
         };
-
         fetchImage();
-    }, [image]);
-
+    }, []);
 
     const getImages = async () => {
         try {
-            let urlAddress;
             const entries = await client.getEntries({
                 content_type: "componentHeroBanner",
                 select: "fields",
                 order: "fields.internalName"
             });
-            urlAddress = entries.items[0].fields.image.fields.file.url;
-            if (localCache.url !== urlAddress) {
-                console.log(urlAddress)
-                localCache.url = urlAddress;
-                console.log(localCache.url)
-                return urlAddress;
+            const imgUrlAddress = entries.items[0].fields.image.fields.file.url;
+            if (localCache.url !== imgUrlAddress) {
+                localCache.url = imgUrlAddress;
+                console.log('fetched new url', localCache.url)
+                setImage(localCache.url);
+                return image;
             } else {
-                console.log('url z cache', localCache.url)
-                return localCache.url;
+                setImage(localCache.url)
+                console.log('using cache url', localCache.url)
+                return image;
             }
-
         } catch (error) {
-            console.log(`Error fetching background image: ${error}`)
+            throw new Error(`Error fetching background image: ${error.message}`)
         };
     }
     return [image];

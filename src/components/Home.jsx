@@ -9,12 +9,8 @@ import Flavours from "./Home/Flavours";
 import Footer from "./Home/Footer";
 
 const Home = () => {
-  // const [image, setImage] = useState("");
   const [image]= useContentful();
 
-  // useEffect(() => {
-  //   getImages().then((response) => setImage(response));
-  // });
   return (
     <div>
       <Header />
