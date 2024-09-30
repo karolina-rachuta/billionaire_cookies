@@ -17,23 +17,10 @@ const useContentful = () => {
         space: process.env.REACT_APP_space_id,
         accessToken: process.env.REACT_APP_contentPreviewApi,
     });
-    
+
     useEffect(() => {
-        const fetchImage = async () => {
-            try {
-                if (localCache.url) {
-                    console.log('z cache')
-                    setImage(localCache.url)
-                } else {
-                    const fetchedImage = await getImages();
-                    console.log('Fetched image:', fetchedImage, image);
-                }
-            } catch (err) {
-                console.error('Error fetching image:', err)
-            }
-        };
-        fetchImage();
-    }, []);
+        getImages().then((res) => setImage(res)).catch((err) => console.error(err.message))
+    }, [image]);
 
     const getImages = async () => {
         try {
@@ -46,12 +33,11 @@ const useContentful = () => {
             if (localCache.url !== imgUrlAddress) {
                 localCache.url = imgUrlAddress;
                 console.log('fetched new url', localCache.url)
-                setImage(localCache.url);
-                return image;
+                return localCache.url;
             } else {
                 setImage(localCache.url)
                 console.log('using cache url', localCache.url)
-                return image;
+                return localCache.url;
             }
         } catch (error) {
             throw new Error(`Error fetching background image: ${error.message}`)
