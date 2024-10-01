@@ -2,8 +2,8 @@ const handler = async (event) => {
     const authHeader = event.headers['authorization'];
     const encodedCredentials = authHeader && authHeader.split(' ')[1];
 
-    const validUsername = process.env.REACT_APP_protected_id;
-    const validPassword = process.env.REACT_APP_protected_password;
+    const validUsername = 'test1';
+    const validPassword = 'testtest2';
 
     const validCredentials = Buffer.from(`${validUsername}:${validPassword}`).toString('base64');
 
