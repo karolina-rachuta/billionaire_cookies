@@ -15,12 +15,13 @@ const Home = () => {
   useEffect(() => {
     getImages().then((response) => setImage(response));
   });
+
   return (
     <div>
       <Header />
-      <Hero/>
-      <Flavours image={image}/>
-      <AboutUs/>
+      <Hero />
+      <Flavours image={image} />
+      <AboutUs />
       <Order />
       <Footer />
     </div>
