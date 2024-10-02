@@ -26,3 +26,7 @@ Business website for cookies company.
 ![screenshot](./src/assets/screenshoots/pic6.png)
 ![screenshot](./src/assets/screenshoots/pic7.png)
 ![screenshot](./src/assets/screenshoots/pic8.png)
+
+
+## MIT License:
+Copyright &copy; 2024 Karolina Rachuta. All rights reserved.
