@@ -1,5 +1,4 @@
 import React from "react";
-import { useState, useEffect } from "react";
 import useContentful from "../useContenful";
 import Header from "./Home/Header";
 import Hero from "./Home/Hero";
@@ -9,12 +8,7 @@ import Flavours from "./Home/Flavours";
 import Footer from "./Home/Footer";
 
 const Home = () => {
-  const [image, setImage] = useState("");
-  const { getImages } = useContentful();
-
-  useEffect(() => {
-    getImages().then((response) => setImage(response));
-  });
+  const [image]= useContentful();
 
   return (
     <div>
