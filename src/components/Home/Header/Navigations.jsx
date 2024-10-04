@@ -14,8 +14,8 @@ const Navigation = ({menuOpen}) => {
             <li className="menu__icons">
                 <a href="https://www.instagram.com/billionairecookiesdubai/" target="_blank" rel="noreferrer"><i className="fa-brands fa-instagram"></i></a>
                 <a href="https://www.tiktok.com/@billionairecookiesdubai" target="_blank" rel="noreferrer"><i className="fa-brands fa-tiktok"></i></a>
-                <a href="https://wa.me/971567715360"><i className="fa-brands fa-whatsapp"></i></a>
-                <a href="https://maps.app.goo.gl/teHdvr4RX6Wwv3mP6"><i className="fa-solid fa-location-dot"></i></a>
+                <a href="https://wa.me/971567715360"><i loading="lazy" className="fa-brands fa-whatsapp"></i></a>
+                <a href="https://maps.app.goo.gl/teHdvr4RX6Wwv3mP6"><i loading="lazy" className="fa-solid fa-location-dot"></i></a>
             </li>
         </ul>
     )

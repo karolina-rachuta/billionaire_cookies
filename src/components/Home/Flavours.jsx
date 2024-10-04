@@ -4,7 +4,7 @@ function Flavours({image}) {
     <div
         className="container flavours__container"
         id="flavours">
-          <img className="flavours__img" src={image} alt="" />
+          <img loading="lazy" className="flavours__img" src={image} alt="" />
       </div>)
   }
   export default Flavours;

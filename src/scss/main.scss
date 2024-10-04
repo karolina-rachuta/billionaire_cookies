@@ -18,13 +18,54 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   font-family: $font-base;
   font-weight: 400;
   font-size: $base-font-size;
   color: $primary-color;
   width: 100%;
   background-color: $base-color;
+}
+
+body::before {
+  content: url(../assets/bcookies7.webp);
+  position: absolute;
+  top: -9999rem;
+  left: -9999rem;
+  opacity: 0;
+}
+
+body::before {
+  content: url(../assets/bcookies8.webp);
+  position: absolute;
+  top: -9999rem;
+  left: -9999rem;
+  opacity: 0;
+}
+
+body::before {
+  content: url(../assets/logo.webp);
+  position: absolute;
+  top: -9999rem;
+  left: -9999rem;
+  opacity: 0;
+}
+
+body::before {
+  content: url(../assets/order_img.webp);
+  position: absolute;
+  top: -9999rem;
+  left: -9999rem;
+  opacity: 0;
+}
+
+body::before {
+  content: url(../assets/about_info.webp);
+  position: absolute;
+  top: -9999rem;
+  left: -9999rem;
+  opacity: 0;
 }
 
 .container {

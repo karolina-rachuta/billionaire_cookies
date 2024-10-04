@@ -3,7 +3,7 @@ import About_info from "../../assets/about_info.webp";
 const AboutUs = () => {
   return (
     <div className="container container__about" id="about">
-      <img src={About_info} alt="" />
+      <img loading="lazy" src={About_info} alt="" />
       <div className="about__box">
       <h1>About</h1>
       <p>

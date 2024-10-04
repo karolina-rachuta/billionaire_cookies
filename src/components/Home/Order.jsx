@@ -28,7 +28,7 @@ const Order = () => {
           </div>
         </div>
         <div className="order__right">
-          <img src={Order_Photo} alt="" />
+          <img loading="lazy" src={Order_Photo} alt="" />
         </div>
       </div>
     </div>

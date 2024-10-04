@@ -6,7 +6,7 @@ function Footer() {
     <div className="container footer__container" id="footer">
       <div className="footer__box">
         <Link to="/" className="logo">
-          <img src={Logo} className="logo__img" alt="Company Logo" />
+          <img src={Logo} loading="lazy" className="logo__img" alt="Company Logo" />
         </Link>
         <div className="footer__details">
           <p>
