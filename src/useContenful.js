@@ -32,11 +32,9 @@ const useContentful = () => {
             const imgUrlAddress = entries.items[0].fields.image.fields.file.url;
             if (localCache.url !== imgUrlAddress) {
                 localCache.url = imgUrlAddress;
-                console.log('fetched new url', localCache.url)
                 return localCache.url;
             } else {
-                setImage(localCache.url)
-                console.log('using cache url', localCache.url)
+                setImage(localCache.url);
                 return localCache.url;
             }
         } catch (error) {
