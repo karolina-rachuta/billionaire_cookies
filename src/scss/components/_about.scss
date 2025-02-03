@@ -16,14 +16,20 @@
         padding: pxToRem(15) pxToRem(30);
     }
 
-    img {
+    picture {
         width: 100%;
-        height: auto;
-        max-width: 1000px;
-        border-radius: 20px;
+        display: flex;
+        justify-content: center;
 
-        @media screen and (min-width: 550px) {
-            width: 80%;
+        img {
+            width: 100%;
+            height: auto;
+            max-width: 800px;
+            border-radius: 20px;
+
+            @media screen and (min-width: 550px) {
+                width: 80%;
+            }
         }
     }
 
@@ -40,9 +46,10 @@
             display: inline-block;
             font-size: 40px;
             font-weight: 600;
+
             @media screen and (min-width: 550px) {
                 font-size: 50px;
-              }
+            }
         }
 
         p {
@@ -52,7 +59,7 @@
             padding: 15px 40px;
             line-height: 1.7;
 
-            @media only screen and (min-width: 550px){
+            @media only screen and (min-width: 550px) {
                 font-size: 20px;
             }
         }
