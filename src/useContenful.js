@@ -20,7 +20,7 @@ const useContentful = () => {
 
     useEffect(() => {
         getImages().then((res) => setImage(res)).catch((err) => console.error(err.message))
-    }, [image]);
+    }, []);
 
     const getImages = async () => {
         try {
