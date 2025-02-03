@@ -11,7 +11,7 @@ function Flavours({ image }) {
                 loading="lazy"
                 className="flavours__img"
                 src={image}
-                alt=""
+                alt="Flavours image"
                 width="700"
                 height="589"
             />

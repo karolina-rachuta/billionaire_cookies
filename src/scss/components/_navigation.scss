@@ -137,6 +137,7 @@ header {
                     gap: pxToRem(10);
                     align-items: center;
                     justify-content: start;
+                    font-size: pxToRem(30);
 
                     @media screen and (min-width: 550px) {
                         margin-top: pxToRem(60);
@@ -144,13 +145,9 @@ header {
 
                     a {
                         padding: pxToRem(14) pxToRem(20);
-
-                        .fa-brands,
-                        .fa-solid {
-                            font-size: pxToRem(30);
-                            color: white;
-                            font-weight: bold;
-                        }
+                        font-size: pxToRem(30);
+                        color: white;
+                        font-weight: bold;
                     }
                 }
 

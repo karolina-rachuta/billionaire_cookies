@@ -1,6 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../../assets/logo_footer.webp';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+    faInstagram,
+    faTiktok,
+    faWhatsapp,
+} from '@fortawesome/free-brands-svg-icons';
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 function Footer() {
     return (
         <div className="container footer__container" id="footer">
@@ -30,16 +37,16 @@ function Footer() {
             </div>
             <div className="footer__socials">
                 <a href="https://www.instagram.com/billionairecookiesdubai/">
-                    <i className="fa-brands fa-instagram"></i>
+                    <FontAwesomeIcon icon={faInstagram} />
                 </a>
                 <a href="https://www.tiktok.com/@billionairecookiesdubai">
-                    <i className="fa-brands fa-tiktok"></i>
+                    <FontAwesomeIcon icon={faTiktok} />
                 </a>
                 <a href="https://wa.me/971567715360">
-                    <i className="fa-brands fa-whatsapp"></i>
+                    <FontAwesomeIcon icon={faWhatsapp} />
                 </a>
                 <a href="https://maps.app.goo.gl/teHdvr4RX6Wwv3mP6">
-                    <i className="fa-solid fa-location-dot"></i>
+                    <FontAwesomeIcon icon={faLocationDot} />
                 </a>
             </div>
         </div>
