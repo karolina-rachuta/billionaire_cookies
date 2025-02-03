@@ -11,6 +11,8 @@ function Footer() {
                         loading="lazy"
                         className="logo__img"
                         alt="Company Logo"
+                        width="100"
+                        height="41"
                     />
                 </Link>
                 <div className="footer__details">

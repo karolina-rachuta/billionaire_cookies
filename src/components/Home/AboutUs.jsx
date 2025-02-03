@@ -10,8 +10,8 @@ const AboutUs = () => {
                 <img
                     loading="lazy"
                     src={About_info}
-                    width=""
-                    height=""
+                    width="800"
+                    height="242"
                     alt=""
                 />
             </picture>

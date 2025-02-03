@@ -5,7 +5,7 @@ function Flavours({ image }) {
             className="container flavours__container"
             id="flavours"
             width="700"
-            heigth="589"
+            height="589"
         >
             <img
                 loading="lazy"
@@ -13,7 +13,7 @@ function Flavours({ image }) {
                 src={image}
                 alt=""
                 width="700"
-                heigth="589"
+                height="589"
             />
         </div>
     );

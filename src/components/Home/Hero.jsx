@@ -16,7 +16,6 @@ const Hero = () => {
             <div>
                 <p>Dubai&apos;s first rotating cookie menu is here</p>
             </div>
-            {/* fetchpriority="high" */}
         </div>
     );
 };
