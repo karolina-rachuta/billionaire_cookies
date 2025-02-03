@@ -1,10 +1,16 @@
-import React from "react";
-function Flavours({image}) {
+import React from 'react';
+function Flavours({ image }) {
     return (
-    <div
-        className="container flavours__container"
-        id="flavours">
-          <img loading="lazy" className="flavours__img" src={image} alt="" />
-      </div>)
-  }
-  export default Flavours;
+        <div className="container flavours__container" id="flavours">
+            <img
+                loading="lazy"
+                className="flavours__img"
+                src={image}
+                alt=""
+                width="700"
+                heigth="589"
+            />
+        </div>
+    );
+}
+export default Flavours;
