@@ -46,7 +46,6 @@ const styles = {
         justifyContent: 'center',
         alignItems: 'center',
         height: '100vh',
-        width: '100%',
         background: 'rgba(10, 10, 10, 0.8)',
     },
     input: {
