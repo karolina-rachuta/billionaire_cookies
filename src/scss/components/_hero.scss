@@ -8,12 +8,13 @@
     min-height: pxToRem(700);
     background-position: top 0px center;
 
-    @media screen and (max-width: 550px) {
-        background-image: url(../../assets/bcookies7-mobile.webp);
-    }
 
     @media screen and (max-width: 1000px) {
         background-image: url(../../assets/bcookies7-tablet.webp);
+    }
+
+    @media screen and (max-width: 550px) {
+        background-image: url(../../assets/bcookies7-mobile.webp);
     }
 
     div {

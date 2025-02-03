@@ -1,7 +1,12 @@
 import React from 'react';
 function Flavours({ image }) {
     return (
-        <div className="container flavours__container" id="flavours">
+        <div
+            className="container flavours__container"
+            id="flavours"
+            width="700"
+            heigth="589"
+        >
             <img
                 loading="lazy"
                 className="flavours__img"
